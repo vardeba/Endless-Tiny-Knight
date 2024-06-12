@@ -1,0 +1,154 @@
+[gd_scene load_steps=4 format=3 uid="uid://csk70ru06h1su"]
+
+[ext_resource type="Texture2D" uid="uid://b4dg65kkjcbc4" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_ioy3w"]
+[ext_resource type="PackedScene" uid="uid://is8k1grxi2fk" path="res://player/player.tscn" id="2_vo6vk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fuuxw"]
+line_spacing = 24.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorPurple" type="Sprite2D" parent="."]
+position = Vector2(2024, 797)
+texture = ExtResource("1_ioy3w")
+
+[node name="Label" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 625.408
+offset_top = -796.912
+offset_right = 665.408
+offset_bottom = -768.912
+scale = Vector2(2.6934, 2.17628)
+text = "idle"
+
+[node name="Label9" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = -475.592
+offset_top = -965.912
+offset_right = -435.592
+offset_bottom = -937.912
+scale = Vector2(3.09584, 4.03642)
+text = "0             1             2             3             4             5"
+
+[node name="Label10" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = -553.592
+offset_top = -821.912
+offset_right = -537.592
+offset_bottom = -668.912
+scale = Vector2(3.09584, 4.03642)
+text = "0 1 2 3 4 5 6 7"
+label_settings = SubResource("LabelSettings_fuuxw")
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 641.408
+offset_top = -596.912
+offset_right = 681.408
+offset_bottom = -568.912
+scale = Vector2(2.6934, 2.17628)
+text = "run"
+
+[node name="Label3" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 643.408
+offset_top = -412.912
+offset_right = 746.408
+offset_bottom = -384.912
+scale = Vector2(2.6934, 2.17628)
+text = "attack_side_1"
+
+[node name="Label4" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 641.408
+offset_top = -221.912
+offset_right = 744.408
+offset_bottom = -193.912
+scale = Vector2(2.6934, 2.17628)
+text = "attack_side_2"
+
+[node name="Label5" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 608.408
+offset_top = -39.912
+offset_right = 723.408
+offset_bottom = -11.912
+scale = Vector2(2.6934, 2.17628)
+text = "attack_down_1"
+
+[node name="Label6" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 621.408
+offset_top = 168.088
+offset_right = 736.408
+offset_bottom = 196.088
+scale = Vector2(2.6934, 2.17628)
+text = "attack_down_2"
+
+[node name="Label7" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 610.408
+offset_top = 345.088
+offset_right = 702.408
+offset_bottom = 373.088
+scale = Vector2(2.6934, 2.17628)
+text = "attack_up_1"
+
+[node name="Label8" type="Label" parent="WarriorPurple"]
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = 0.067
+anchor_right = -0.029
+anchor_bottom = 0.067
+offset_left = 611.408
+offset_top = 528.088
+offset_right = 696.408
+offset_bottom = 556.088
+scale = Vector2(2.6934, 2.17628)
+text = "attack_up2"
+
+[node name="Player" parent="." instance=ExtResource("2_vo6vk")]
+position = Vector2(0, -1)
+
+[node name="Player2" parent="." instance=ExtResource("2_vo6vk")]
+position = Vector2(454, 367)
+
+[node name="Player3" parent="." instance=ExtResource("2_vo6vk")]
+position = Vector2(710, 377)
